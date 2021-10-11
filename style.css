@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+:root {
+  --blue: #1b61a7;
+  --dark-blue: #0d3297;
+  --blue-background: #000049;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  background-color: #170143;
+}
+.skills {
+  text-align: center;
+}
+hr {
+  width: 50%;
+  margin: 25px auto;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+h3 {
+  font-weight: 300;
+  font-size: 1.7em;
+  color: var(--black);
+}
+p {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.8em;
+  color: var(--white);
+}
+a {
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.about-me {
+  background-color: #d7d7df;
+}
+.container {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: space-between;
+}
+.img-autor {
+  border-radius: 50%;
+  max-width: 20em;
+}
+.container div {
+  justify-content: space-between;
+}
+
+/*Skills*/
+.skills h1 {
+  margin: 15px 0;
+}
+.card-area {
+  margin: 0 auto;
+  width: 75%;
+  justify-content: space-between;
+  display: flex;
+  margin: 0 auto;
+}
+.card {
+  background-color: var(--blue-background);
+  padding: 20px 0;
+  width: 30%;
+  margin: 10px 0;
+  border: 1px solid #ffffff;
+}
+.card h1 {
+  font-size: 2.5em;
+}
+.tech-icon {
+  width: 64px;
+}
+/*Projects*/
+.container-projects {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: space-between;
+}
+.project-display {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.link-linkedin {
+  color: var(--white);
+}
+
+/*Footer*/
+footer {
+    background-color: var(--blue-background);
+    padding: 10px 0;
+}
+.social-media {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+.icon {
+  margin: 10px 0;
+  width: 64px;
+}
+
+@media (max-width: 900px) {
+  /*About*/
+  h1 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .container,
+  .container-projects {
+    text-align: center;
+    flex-direction: column;
+  }
+  .img-autor {
+    margin-top: 25px;
+    width: 15em;
+  }
+  /*Skills*/
+  .card-area {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px 0;
+  }
+}
